@@ -1,0 +1,96 @@
+/* Estilo para el cuerpo del documento */
+body {
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+    display: flex; /* Usa flexbox para el diseño */
+    margin-bottom: 80px; /* Agrega un margen inferior */
+}
+
+/* Estilo para el encabezado */
+header {
+    width: 100%; /* Ancho completo */
+    overflow: hidden; /* Oculta el contenido que desborda */
+    background-color: #0B60B0; /* Color de fondo del encabezado */
+    height: 12vh; /* Altura del encabezado */
+    display: flex; /* Usa flexbox para el diseño */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    position: fixed; /* Fija el encabezado en la parte superior */
+}
+
+/* Estilo para el título dentro del encabezado */
+header > h1 {
+    font-size: 40px; /* Tamaño de fuente */
+    color: white; /* Color del texto */
+    font-weight: 800; /* Grosor de la fuente */
+    text-transform: uppercase; /* Transforma el texto en mayúsculas */
+    font-family: "Protest Strike", sans-serif; /* Fuente personalizada */
+}
+
+/* Estilo para el subtítulo */
+h2 {
+    font-size: 30px; /* Tamaño de fuente */
+    text-align: center; /* Alineación del texto */
+    font-family: "Oswald", sans-serif; /* Fuente personalizada */
+    color: #02498b; /* Color del texto */
+}
+
+/* Estilo para el contenido principal */
+main {
+    background-color: whitesmoke; /* Color de fondo */
+    width: 100%; /* Ancho completo */
+    overflow: hidden; /* Oculta el contenido que desborda */
+    margin: 0 auto; /* Margen automático */
+    margin-top: 20vh; /* Margen superior */
+    margin-right: 10vh; /* Margen derecho */
+    margin-left: 10vh; /* Margen izquierdo */
+    border-radius: 10px; /* Borde redondeado */
+}
+
+/* Estilo para el contenido dentro del contenedor */
+.contenido {
+    margin-top: 110px; /* Margen superior */
+    padding: 20px; /* Relleno */
+}
+
+/* Estilo para los subtítulos */
+h3 {
+    font-family: "Roboto Condensed", sans-serif; /* Fuente personalizada */
+    font-size: 20px; /* Tamaño de fuente */
+    color: #02498b; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    font-size: 27px; /* Tamaño de fuente */
+}
+
+/* Estilo para los párrafos */
+p {
+    font-family: "Roboto Condensed", sans-serif; /* Fuente personalizada */
+    text-align: center; /* Alineación del texto */
+    color: black; /* Color del texto */
+    font-size: 19px; /* Tamaño de fuente */
+    margin-left: 30px; /* Margen izquierdo */
+    margin-right: 30px; /* Margen derecho */
+}
+
+/* Estilo para las imágenes */
+img {
+    width: 600px; /* Ancho de la imagen */
+    border-radius: 5px; /* Borde redondeado */
+    margin: 0px 600px 30px; /* Margen */
+}
+
+/* Estilo para el código */
+code {
+    display: block; /* Muestra el código como bloque */
+    background-color: white; /* Color de fondo */
+    font-size: 14px; /* Tamaño de fuente */
+    padding: 10px; /* Relleno */
+    text-align: center; /* Alineación del texto */
+    width: 30%; /* Ancho */
+    margin: auto; /* Margen automático */
+}
+
+/* Estilo para la introducción */
+.introduccion {
+    text-align: left; /* Alineación del texto */
+}

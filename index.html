@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Alejandro Corral Carrasco">
+    <link rel="stylesheet" href="./recursos/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16"  href="./recursos/img/Virtualbox_logo.png">
+    <title>How to</title>
+</head>
+<body>
+    <header>
+        <h1>¡HOW TO!</h1> <!-- Encabezado principal -->
+    </header>
+            <main>
+                <article>
+                    <h2>COMPARTIR ARCHIVOS CON SAMBA</h2><!-- Título de nivel 2 -->
+                        <p>
+                            Bienvenido a nuestra guía sobre cómo compartir archivos entre máquinas Linux y Windows utilizando Samba en VirtualBox
+                        </p>
+        
+                        <p class="introduccion"><!-- Párrafo con clase -->
+                            En esta guía, exploraremos cómo configurar y utilizar Samba en una configuración de VirtualBox para compartir archivos entre una máquina Linux y una máquina Windows. 
+                            Utilizaremos VirtualBox, un popular software de virtualización que nos permite crear máquinas virtuales independientes con diferentes sistemas operativos, lo que brinda 
+                            un entorno perfecto para aprender y experimentar con la configuración de redes y compartición de archivos.
+                        </p>
+                        <p class="introduccion"><!-- Párrafo con clase -->
+                            Ya sea que estés buscando compartir archivos entre diferentes sistemas operativos para un proyecto colaborativo o simplemente desees aprender sobre la configuración de redes 
+                            en entornos virtualizados, esta guía te proporcionará los conocimientos y las habilidades necesarias para lograrlo con éxito.
+                        </p>
+                        <p class="introduccion"><!-- Párrafo con clase --> 
+                            Se requiere la descarga de VirtualBox desde el enlace provisto a continuación <a href="https://www.virtualbox.org/">aquí</a>. Posteriormente, se debe seleccionar la opción de 
+                            descarga correspondiente al sistema operativo utilizado, específicamente para Windows. Esto implica hacer clic en el botón de descarga destacado en color azul.
+                        </p>
+
+
+                    <h3>INSTALACIÓN ISOS</h3>
+
+                    <img src="./recursos/img/4.png" alt="ISOS">
+
+                    <p>
+                        1. Para la creación de las máquinas virtuales, primeramente debemos de descargar las ISOS de <a href="https://www.microsoft.com/es-es/software-download/windows10">WINDOWS</a> y de <a href="https://ubuntu.com/download/desktop">LINUX</a>, para posteriormente añadirlas a las máquinas 
+                        virtuales
+                    </p>
+
+                </article>
+    
+                <article>
+                    <h3>MÁQUINA LINUX</h3>
+
+                    <img src="./recursos/img/9.png" alt="Seleccion de ISO">
+
+                    <p>
+                        1. Se procederá a la incorporación de una nueva máquina virtual, en la cual se deberá seleccionar la opción correspondiente a "Imagen ISO". Una vez dentro de esta opción, se procederá a elegir 
+                        la alternativa "otro..." para posteriormente seleccionar la imagen correspondiente a la distribución de Ubuntu.
+                    </p>
+
+                    <img src="./recursos/img/11.png" alt="configuración de usuario">
+
+                    <p>
+                        2. Tras la adición exitosa de la máquina virtual, se solicitará un cambio de credenciales de usuario, comprendiendo tanto el nombre de usuario como la contraseña. Se recomienda optar por una 
+                        combinación breve y de fácil recordación para garantizar la accesibilidad y el manejo eficiente del sistema.
+                    </p>
+
+                    <img src="./recursos/img/12.png" alt="configuración hardware">
+
+                    <p>
+                        3. Será necesario configurar los parámetros de memoria base, cantidad de procesadores y tamaño de disco por defecto con el fin de prevenir posibles inconvenientes operativos.
+                    </p>
+
+                    <img src="./recursos/img/14.png" alt="">
+
+                    <p>4. Sin tocar nada la máquina virtual comenzará a arrancarse, en este paso no tocaremos nada</p>
+    
+                    <h3>MÁQUINA WINDOWS</h3>
+
+                    <img src="./recursos/img/windowmk.png" alt="">
+
+                    <p>
+                        1. Se procederá a la descarga de la imagen ISO proporcionada anteriormente, seguido de un clic en la versión de 64 bits (x64) para dar inicio al proceso de descarga.
+                    </p>
+                    <p>
+                       2.  La creación de la máquina virtual sigue un procedimiento similar al utilizado para sistemas Linux, requiriendo la observancia rigurosa de cada paso sin omitir ninguno. Una vez que la máquina 
+                        virtual haya sido creada satisfactoriamente, iniciará el proceso de arranque. No obstante, por el momento, se procederá a cerrar la máquina virtual para continuar con los pasos subsiguientes.
+                    </p>
+
+                </article>
+    
+                <article>
+                    <h3>CONFIGURACIÓN RED NAT</h3>
+
+                    <img src="./recursos/img/5.png" alt="">
+
+                    <p>
+                        1. En VirtualBox, se procederá a hacer clic derecho en el menú de "Archivos" > "Herramientas". Luego, en el desplegable que aparece, se posicionarán el cursor sobre la opción "Herramientas" y se seleccionará 
+                        "Administrador de Red" en la nueva ventana emergente.
+                    </p>
+
+                    <img src="./recursos/img/7.png" alt="">
+
+                    <p>
+                       2.  Nos dirigiremos a la configuración de red y seleccionaremos la opción "Red NAT". Posteriormente, cambiaremos el nombre de esta configuración a "Red Local".
+                    </p>
+                </article>
+                
+                <article>
+                    <h3>LINUX</h3>
+
+                    <img src="./recursos/img/updates.png" alt="updates">
+
+                    <p>
+                        1. Dentro de la interfaz, ubicaremos una serie de aplicaciones en la barra lateral. Haremos clic en la bolsa naranja identificada como "Ubuntu Software". Una vez abierta esta aplicación, nos dirigiremos
+                        a la esquina superior derecha y seleccionaremos la pestaña "Updates". Acto seguido, pulsaremos sobre el botón verde etiquetado como "Update All" para proceder con la descarga de las actualizaciones disponibles.
+                    </p>
+
+                    <img src="./recursos/img/15-terminator.png" alt="terminal">
+
+                    <p>
+                        2. Se encontrará un problema al abrir la terminal por defecto en la Máquina Virtual. Para solucionarlo, se buscará y descargará una nueva terminal, en este caso, Terminator, mediante el buscador de software. Después 
+                        de instalar Terminator, se podrá cerrar la ventana de Ubuntu Software.
+                    </p>
+                    <p>
+                        3. Una vez dentro de la terminal, realizaremos los siguientes códigos:
+                    </p>
+
+                    <code>su-> 'Para cambiar a root, introducir contraseña'</code>
+                    <code>apt upgrade-> 'Realizar actualizaciones'</code>
+
+                    <p>
+                        4. Al crear el nuevo usuario, se le solicitará establecer una contraseña. Se sugiere utilizar la misma contraseña que se utilizó al crear la máquina virtual de Linux. Posteriormente, se requerirá completar varios huecos; 
+                        en este caso, se pueden dejar en blanco o llenarlos según prefiera el usuario, es igual a la hora de realizar la máquina, realizaremos el siguiente código:
+                    </p>
+
+                    <img src="./recursos/img/18.png" alt="">
+
+                    <code>apt install samba-> 'Para instalar Samba'</code>
+                    <code>adduser winuser-> 'Para agregar el nuevo usuario'</code>
+
+                    <p>
+                        5. A continuación, iniciaremos el proceso de creación de una carpeta compartida en la cual estableceremos permisos específicos. Para ello, emplearemos el comando "chmod 777", que otorgará permisos de lectura, escritura y ejecución
+                        a todos los usuarios. Este nivel de permisos permitirá un acceso completo a la carpeta compartida, garantizando así una colaboración efectiva y una gestión flexible de los archivos contenidos en ella.
+                    </p>
+                    
+                    <img src="./recursos/img/19.png" alt="permisos de usuario">
+
+                    <code>su winuser-> 'Para iniciar sesión como winuser'</code>
+                    <code>cd ..-> 'Para retroceder a la carpeta inical'</code>
+                    <code>cd winuser-> 'Para acceder a la carpeta de usuario'</code>
+                    <code>mkdir compartida-> 'Para crear la nueva carpeta'</code>
+                    <code>chmod 777 compartida-> 'Para darle permisos a la carpeta'</code>
+
+                    <p>
+                        6. Emplearemos el editor nano, una herramienta nativa en entornos Linux, para configurar la carpeta compartida. Tras ejecutar el comando, el archivo se abrirá en la terminal. Navegaremos hasta el final del archivo y activaremos el modo 
+                        de inserción presionando la tecla "insert" en nuestro teclado. A continuación, introduciremos el siguiente contenido en el archivo, que se deberá de ver así.
+                    </p>
+
+                    <img src="./recursos/img/escritonano.png" alt="escrito en nao">
+
+                    <code>sudo nano /etc/samba/smb.conf-> 'Para editar el archivo con nano'</code>
+                    <code>[Compartida]</code>
+                    <code>path = /home/winuser/compartida</code>
+                    <code>browseable = yes</code>
+                    <code>read only = no</code>
+                    <code>valid users = winuser</code>
+
+                    <p>
+                        7. Cuando hayamos concluido la edición del archivo y retomemos la terminal, procederemos a ingresar el siguiente comando con el propósito de agregar la cuenta de usuario denominada "winuser" al sistema de Samba, permitiéndole así acceder 
+                        a los recursos compartidos de manera adecuada y segura.
+                    </p>
+
+                    <code>smbpasswd -a winuser-> 'Para agregar a Samba'</code>
+
+                    <p>
+                        8. Dentro de la carpeta compartida, logueados como winuser crearemos un archivo.
+                    </p>
+
+                    <img src="./recursos/img/21.png" alt="">
+
+                    <code>su winuser-> 'Para entrar como winuser'</code>
+                    <code>cd ..-></code>
+                    <code>cd winuser/compartida/</code>
+                    <code>touch archivo-linux-></code>
+                    
+                    <p>
+                        9. Para asegurar la correcta aplicación de todos los cambios realizados, reiniciaremos los servicios de Samba desde la cuenta de superusuario (root). Esto garantizará que cualquier modificación realizada se active y esté plenamente funcional.
+                    </p>
+                    <p>
+                        10. Finalmente, para verificar la conexión entre la máquina virtual y Windows, procederemos a comprobar la dirección IP asignada. En mi caso, esta dirección es 10.0.2.15. Este paso es crucial para asegurar la conectividad entre los sistemas y 
+                        confirmar que la configuración de red se haya realizado correctamente.
+                    </p>
+
+                    <img src="./recursos/img/23.png" alt="">
+
+                    <code>ip a-> 'Mostrar dirección ip'</code>
+                </article>
+                
+                <article>
+
+                    <h3>WINDOWS</h3>
+                    
+                    <img src="./recursos/img/firewall.png" alt="firewall">
+                    <p>
+                        1. Una vez abierto, pulsaremos la tecla windows y buscaremos firewall.
+                    </p>
+
+                    <img src="./recursos/img/reglas entrada y salida.png" alt="entradas y salia">
+                    <p>
+                        2. En la parte lateral, encontraremos la configuración avanzada.
+                    </p>
+
+                    <img src="./recursos/img/archivos e impresoras.png" alt="archivos e impresoras">
+                    <p>
+                        3. En la barra lateral, localizaremos la opción denominada "Reglas de Entrada" y haremos clic sobre ella. Se desplegará un listado en el que habrá que habilitar todas las opciones relacionadas con "Archivos e Impresoras Compartidos". Posteriormente, 
+                        repetiremos el mismo procedimiento con las "Reglas de Salida". Este ajuste garantizará la correcta comunicación entre los sistemas y permitirá el intercambio de archivos e impresoras de manera fluida.
+                    </p>
+
+                    <img src="./recursos/img/ejecutar.png" alt="ejecutar">
+                    <p>
+                        4. Para acceder a la carpeta compartida, abriremos el programa "Ejecutar" y escribiremos la siguiente dirección: "//iplinux/compartida". Luego, pulsaremos en "Aceptar" para confirmar. Esto permitirá la visualización y acceso a la carpeta compartida desde 
+                        el sistema operativo Windows.
+                    </p>
+
+                    <img src="./recursos/img/final.png" alt="carpeas compartidas">
+                    <p>
+                        5. Al ejecutar este proceso, se abrirá la carpeta compartida creada en Ubuntu, lo que posibilitará el acceso a la información desde ambos equipos. Esto facilitará la colaboración y el intercambio de archivos entre los sistemas operativos.
+                    </p>
+
+                </article>
+
+            </main>
+        
+</body>
+</html>  
